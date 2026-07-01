@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/assets/banner.svg" alt="Agentic AI Mega-Project Template — phase-gated lifecycle, state-file memory, traceability chain, work packets, adversarial ADRs, CI gates" width="100%">
+</p>
+
 # Agentic AI Mega-Project Template
 
 A topic-agnostic starter kit for building **very large software projects with AI agents as the primary workforce and humans as directors**. It was distilled from a real large-scale project run this way, then generalized and enriched with the strongest ideas from community methodologies (GitHub Spec Kit, BMAD, AWS AI-DLC, Cline Memory Bank, Anthropic agentic-coding practices, 12-Factor Agents) and academic research (MetaGPT, ChatDev, the Agentic SE 3.0 roadmap).
