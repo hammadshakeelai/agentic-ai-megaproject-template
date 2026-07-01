@@ -66,4 +66,4 @@ This template treats the repository itself as the project's brain:
 
 ## License / Attribution
 
-Use freely. If you improve the process, record what you changed and why in `docs/RESEARCH_FOUNDATIONS.md` so the methodology itself stays traceable.
+MIT — see `LICENSE`. If you improve the process, record what you changed and why in `docs/RESEARCH_FOUNDATIONS.md` so the methodology itself stays traceable.
