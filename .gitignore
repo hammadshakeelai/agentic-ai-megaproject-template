@@ -1,0 +1,26 @@
+# Environment and secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and build outputs
+node_modules/
+.venv/
+venv/
+__pycache__/
+build/
+dist/
+target/
+.dart_tool/
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Generated knowledge outputs are rebuilt, not versioned (keep folder via .gitkeep)
+knowledge/graph/*
+!knowledge/graph/.gitkeep

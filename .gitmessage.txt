@@ -1,0 +1,14 @@
+type(scope): subject
+
+
+# --- Commit guidance (docs/COMMIT_POLICY.md) ---
+# One semantic purpose per commit. Types:
+#   docs scaffold feat fix test refactor chore security perf
+#
+# Required trailers for AI-authored commits:
+AI-Agent:
+AI-Work-Mode:
+AI-Commit-Time:
+Work-Package:
+Requirements:
+Process-Docs-Updated:
