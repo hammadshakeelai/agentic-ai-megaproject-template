@@ -1,0 +1,14 @@
+# CODEOWNERS — review routing and ownership boundaries.
+# Even a solo project benefits: it documents which areas are sensitive enough
+# to need human eyes, and agents respect these boundaries before branch
+# protection exists.
+
+# Default owner
+* {{TEAM_OR_OWNER}}
+
+# Process and governance docs: always human-reviewed
+/AGENTS.md {{TEAM_OR_OWNER}}
+/docs/PROCESS.md {{TEAM_OR_OWNER}}
+/docs/adr/ {{TEAM_OR_OWNER}}
+/docs/GOVERNANCE_AND_GATES.md {{TEAM_OR_OWNER}}
+/.github/ {{TEAM_OR_OWNER}}

@@ -1,0 +1,49 @@
+name: Feature Request
+description: Propose new or changed behavior. Real features need a requirement ID before implementation.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: What user or system need does this serve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Behavior
+    validations:
+      required: true
+  - type: input
+    id: requirement
+    attributes:
+      label: Related Requirement IDs
+      description: Existing FR/NFR IDs this extends, or "new" if a catalogue entry is needed.
+    validations:
+      required: false
+  - type: textarea
+    id: scope
+    attributes:
+      label: Out Of Scope
+      description: What this request deliberately does NOT include.
+    validations:
+      required: false
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks / Security / Privacy Notes
+    validations:
+      required: false
+  - type: dropdown
+    id: ring
+    attributes:
+      label: Earliest Release Ring
+      options:
+        - internal
+        - alpha
+        - beta
+        - production
+    validations:
+      required: false

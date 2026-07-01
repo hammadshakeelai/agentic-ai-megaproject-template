@@ -1,0 +1,26 @@
+name: Docs Validation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  docs-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate planning docs and state files
+        run: python tools/qa/validate_docs.py
+
+      - name: Scan for obvious secrets
+        run: python tools/qa/scan_secrets.py

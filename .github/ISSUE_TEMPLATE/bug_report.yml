@@ -1,0 +1,63 @@
+name: Bug Report
+description: Report a defect, regression, security/privacy issue, or failing test.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+    validations:
+      required: true
+  - type: input
+    id: requirement
+    attributes:
+      label: Requirement/Test IDs
+      description: Example FR-AUTH-003, TC-AUTH-003.
+    validations:
+      required: false
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - P0 blocks everything
+        - P1 blocks release
+        - P2 fix soon
+        - P3 backlog
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction Steps
+      description: Include commands, environment, account state, or data fixture.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Result
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Security/Privacy Impact
+      description: Does this touch sensitive data classes, auth, or a launch-blocking area?
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, screenshots, test output, commit hash, or environment info.
+    validations:
+      required: false
