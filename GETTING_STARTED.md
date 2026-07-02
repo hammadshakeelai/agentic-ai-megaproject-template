@@ -24,6 +24,8 @@ Search the whole tree for `{{` and replace:
 
 Placeholders you cannot fill yet are fine — Phase 0 exists to fill them. Leave them as `{{...}}` so validators can flag them later.
 
+Also update the CI status badge near the top of `README.md`: replace the `hammadshakeelai/agentic-ai-megaproject-template` owner/repo in both the badge image and link URLs with your own, so it reflects your project's build, not the template's.
+
 ## 3. The Bootstrap Ritual (Phase 0 Kickoff)
 
 Give your AI agent this exact prompt (adapt bracketed parts):
