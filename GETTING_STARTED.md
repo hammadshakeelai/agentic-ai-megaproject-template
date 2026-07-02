@@ -63,7 +63,23 @@ The two artifacts that matter most from Phase 0:
    python tools/qa/scan_secrets.py
    ```
 
-3. Push to your host and (when available) make the docs-validation workflow a required check.
+3. Push to your host, let the docs-validation workflow run once, then make it a **required status check** on `main` so Gate 1 cannot be bypassed. On a public GitHub repo (branch protection is free) this is one call — the context name is the workflow's job id (`docs-validation`) and `15368` is GitHub's global Actions app id:
+
+   ```bash
+   # confirm the exact check name from a completed run first
+   gh api repos/OWNER/REPO/commits/main/check-runs --jq '.check_runs[].name'
+
+   gh api --method PUT repos/OWNER/REPO/branches/main/protection --input - <<'JSON'
+   {
+     "required_status_checks": { "strict": false, "checks": [ { "context": "docs-validation", "app_id": 15368 } ] },
+     "enforce_admins": false,
+     "required_pull_request_reviews": null,
+     "restrictions": null
+   }
+   JSON
+   ```
+
+   `enforce_admins: false` keeps an owner escape hatch for direct pushes; set it to `true` once you move to a strict PR-only flow. `strict: false` avoids forcing every branch to be rebased before merge — flip to `true` if you want that.
 
 ## 5. Proceed Through Phases
 
