@@ -43,6 +43,7 @@ This template treats the repository itself as the project's brain:
 | `docs/METHODOLOGY.md` | The software-engineering artifact chain and traceability rule. |
 | `docs/AGENT_HANDOFF_SYSTEM.md` | Session start/end protocol, task packets, parallel-agent rules. |
 | `docs/MULTI_AGENT_ORCHESTRATION.md` | Agent roles, orchestration patterns, pause points, evidence rules. |
+| `docs/prompts/ROLE_AGENT_PROMPTS.md` | Ready-to-paste, governed role prompts (tech lead, architect, implementer, reviewer, security, DevOps, agent team). |
 | `docs/CONTEXT_ENGINEERING.md` | Token-safe read order, memory hierarchy, compaction strategy. |
 | `docs/KNOWLEDGE_SYSTEM.md` | Docs / machine-knowledge / diagram layers and update rules. |
 | `docs/COMMIT_POLICY.md` | Short-burst semantic commits with AI trailers. |

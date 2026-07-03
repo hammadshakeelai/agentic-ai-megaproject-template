@@ -23,6 +23,8 @@ Roles are hats, not necessarily separate tools — one agent can wear different 
 | **Tester / QA** | Test specs, goldsets, gate design | Test catalogues, matrices, benchmark reports | Weaken a gate to make it pass |
 | **Scribe / Librarian** | Knowledge maintenance | State-file consistency, knowledge entries, stale-doc sweeps | Change requirements while "tidying" |
 
+**Ready-to-paste prompts for each role:** `prompts/ROLE_AGENT_PROMPTS.md` — governed role stances (Technical Lead, Architect, Implementer, Reviewer, Security Auditor, DevOps, and the multi-agent team) wired to read the state files, respect the gates, and show evidence. Use them to put a session into a role without it drifting into an ungoverned code dump.
+
 ## Orchestration Patterns (in order of adoption)
 
 ### 1. Single agent, role-sequenced (default)

@@ -112,6 +112,8 @@ Orient (read state files) -> Claim packet -> Explore -> Plan -> Implement in bur
 
 If a session ends mid-task for any reason, the state files are the recovery path. That is the whole point.
 
+To put a session into a specific engineering role (tech lead, architect, implementer, reviewer, security auditor, DevOps, or a coordinated agent team), paste the matching prompt from `docs/prompts/ROLE_AGENT_PROMPTS.md` and append your target. Those prompts already bake in "read the state files, respect the gates, show evidence," so a role stays governed instead of turning into a loose code dump.
+
 ## 7. Scaling Up
 
 When one agent is not enough, read `docs/MULTI_AGENT_ORCHESTRATION.md` before spawning more. The non-negotiable rule: **two agents never edit the same files in the same time window.** Partition by owned folders, coordinate through state files and packets.
